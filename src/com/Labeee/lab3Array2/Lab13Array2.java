@@ -21,11 +21,12 @@ public class Lab13Array2 {
 	}
 	public static void showarray3(int[][] array) {
 		System.out.println("ข้อ2 ");
+		int sumarray=0;
 		for(int row=0; row < array.length; row++) {
 			for(int coum=2; coum< array[row].length;coum++) {
-				System.out.print(array[row][coum]);
+				  sumarray +=array[row][coum];
 			}
-			System.out.print("\n");
 		}
+		System.out.println("ผลรวมของแถวมสุดท้าย :"+sumarray);
 	}
 }
